@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>GPA Calculator</h1>
+        <p>Calculate Your GPA easily using this calculator. Add your course names, credits, and grades to get your current GPA.</p>
+
+        <div class="gpacal-interface">
+            <div class="gpa-image">
+                <img src="Image.png" alt="">
+            </div>
+
+        <div class="gpacal-calculateinterface">
+            <div class="gpa-display">
+                <p>Your Current GPA is:</p>
+                <p id="calculated-gpa">0.00</p>
+            </div>
+
+            <form>
+                <div class="form-1">
+                    <label for="course-code">Course Code</label>
+                    <input type="text" id="course-code" placeholder="Enter Course Code" required/>
+                </div>
+
+                <div class="form-2">
+                    <label for="course-credits">Credits</label>
+                    <input type="number" id="course-credits" placeholder="Enter Credits" required/>
+                </div>
+
+                <div class="form-3">
+                    <label for="course-grade">Grade</label>
+                    <select id="course-grade" required>
+                        <option value="">Select Grade</option>
+                        <option value="4.0">A+</option>
+                        <option value="4.0">A</option>
+                        <option value="3.70">A-</option>
+                        <option value="3.30">B+</option>
+                        <option value="3.00">B</option>
+                        <option value="2.70">B-</option>
+                        <option value="2.30">C+</option>
+                        <option value="2.00">C</option>
+                        <option value="1.70">C-</option>
+                        <option value="1.30">D+</option>
+                        <option value="1.00">D</option>
+                        <option value="0.00">E</option>
+                    </select>
+                </div>
+            </form>
+
+            <button type="submit" form="course-form">Add Course</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
