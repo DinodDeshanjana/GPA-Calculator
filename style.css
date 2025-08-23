@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    background-color: #fcf5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 10px;
+}
+
+.main-container{
+    background-color: #2f8dff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.main-container h1{
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+}
+
+.main-container p{
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+.gpacal-interface{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.gpa-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.gpa-image img{
+    width: 220px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.gpacal-calculateinterface{
+    flex:1;
+    min-width: 0;
+}
+
+.gpa-display{
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0px;
+    color: #383c47;
+    background-color: #e0f2fe;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    
+}
+
+.gpa-display p{
+    margin: 5px;
+}
+
+.gpa-display #calculated-gpa{
+    font-size: 45px;
+    margin-top: 0.5rem;
+}
+
+.form-row{
+    display: flex;
+    gap:15px;
+    margin-bottom: 15px;
+}
+
+.form-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.form-1 label{
+    font-size: 17px;
+    margin-bottom: 6px;
+    color: white;
+    font: 600;
+}
+.form-1 input, .form-1 select{
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+    margin-bottom: 5px;
+}
+.form-1 input:focus, .form-1 select:focus{
+    border-color: #3941d4;
+}
+
+button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    /*background-color: #ff8f2c;*/
+    /*background-color: #3941d4;*/
+    background-color:#FF7518;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background:  #fa851f;
+}
