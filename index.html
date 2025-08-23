@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
     <div class="main-container">
         <h1>GPA Calculator</h1>
-        <p>Calculate Your GPA easily using this calculator. Add your course names, credits, and grades to get your current GPA.</p>
+        <p> 🎓 Calculate Your GPA easily using this calculator. Add your course names, credits,<br> and grades to get your current GPA.</p>
 
         <div class="gpacal-interface">
             <div class="gpa-image">
@@ -21,18 +23,18 @@
                 <p id="calculated-gpa">0.00</p>
             </div>
 
-            <form>
+            <form id="course-form" class="form-row">
                 <div class="form-1">
                     <label for="course-code">Course Code</label>
                     <input type="text" id="course-code" placeholder="Enter Course Code" required/>
                 </div>
 
-                <div class="form-2">
+                <div class="form-1">
                     <label for="course-credits">Credits</label>
                     <input type="number" id="course-credits" placeholder="Enter Credits" required/>
                 </div>
 
-                <div class="form-3">
+                <div class="form-1">
                     <label for="course-grade">Grade</label>
                     <select id="course-grade" required>
                         <option value="">Select Grade</option>
