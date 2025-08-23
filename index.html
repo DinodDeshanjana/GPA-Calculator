@@ -10,7 +10,7 @@
 <body>
     <div class="main-container">
         <h1>GPA Calculator</h1>
-        <p> 🎓 Calculate Your GPA easily using this calculator. Add your course names, credits,<br> and grades to get your current GPA.</p>
+        <p>Calculate Your GPA easily using this calculator. Add your course Code, credits,<br> and grades to get your current GPA.</p>
 
         <div class="gpacal-interface">
             <div class="gpa-image">
@@ -19,7 +19,7 @@
 
         <div class="gpacal-calculateinterface">
             <div class="gpa-display">
-                <p>Your Current GPA is:</p>
+                <p class="dispaly-p">Your Current GPA is:</p>
                 <p id="calculated-gpa">0.00</p>
             </div>
 
@@ -56,6 +56,27 @@
 
             <button type="submit" form="course-form">Add Course</button>
         </div>
+        </div>
+
+        <div class="course-details">
+            <h2>Course Details</h2>
+
+            <div class="course-details-table">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Credit</th>
+                            <th>Grade</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="course-details-list">
+                            
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
