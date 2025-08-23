@@ -28,14 +28,17 @@ body{
 
 .main-container h1{
     text-align: center;
-    margin: 0;
-    font-size: 35px;
+    margin: 0px;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .main-container p{
     text-align: center;
-    padding-bottom: 8px;
-    font-size: 18px;
+    padding-bottom: 20px;
+    font-size: 16.5px;
+    margin: 7px;
 }
 
 .gpacal-interface{
@@ -52,7 +55,7 @@ body{
 }
 
 .gpa-image img{
-    width: 220px;
+    width: 230px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -66,18 +69,16 @@ body{
 .gpa-display{
     font-size: 1.35rem;
     font-weight: 500;
-    margin: 0px;
     color: #383c47;
     background-color: #e0f2fe;
     border-radius: 10px;
     text-align: center;
-    padding: 25px;
-    margin-bottom: 20px;
-    
+    margin: 0;  
 }
 
-.gpa-display p{
-    margin: 5px;
+.dispaly-p{
+    padding-top: 25px;
+    font-weight: 600;
 }
 
 .gpa-display #calculated-gpa{
@@ -112,6 +113,7 @@ body{
     outline: none;
     transition: border 0.3s;
     margin-bottom: 5px;
+    width: 100%;
 }
 .form-1 input:focus, .form-1 select:focus{
     border-color: #3941d4;
@@ -134,3 +136,168 @@ button{
 button:hover{
     background:  #fa851f;
 }
+
+.course-details{
+    background-color:  #e0f2fe;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.course-details h2{
+    margin: 0;
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 550;
+}
+
+.course-details-tabele{
+    overflow-x: auto;
+}
+.course-table{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+}
+.course-table th{
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: 600;
+}
+
+.course-table th, .course-table td{
+    padding: 12px 8px;
+    border: 2px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+.course-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+
+
+
+
+    @media(max-width: 768px){
+        .main-container{
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .gpacal-interface{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .gpa-image{
+            margin-bottom: 20px;
+        }
+        .gpa-image img{
+            width: 160px;
+        }
+
+        .gpacal-calculateinterface{
+            width: 100%;
+        }
+
+        .form-row{
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        button{
+            width: 100%;
+            padding: 14px;
+        }
+
+        .gpa-display #calculated-gpa{
+            font-size: 2.5rem;
+        }
+
+        h1{
+            font-size: 1.75rem;
+        }
+    }
+
+    /*Mobile Style*/
+
+    @media (max-width: 480px){
+        body{
+            padding: 12px;
+        }
+
+        .main-container{
+            padding: 12px;
+            border-radius: 15px;
+        }
+
+        h1{
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .gpa-image img{
+            width: 120px;
+        }
+
+        .gpacal-calculateinterface{
+            padding: 1rem;
+        }
+
+        .gpacal-calculateinterface p{
+            font-size: 1rem;
+        }
+
+        .gpa-display #calculated-gpa{
+            font-size: 2rem;
+        }
+
+        .form-1 label{
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .form-1 input, .form-1 select{
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        .course-details{
+            padding: 12px;
+        }
+
+        .course-details h2{
+            font-size: 1.25rem;
+        }
+
+        .course-table th, .course-table td{
+            padding: 8px 4px;
+            font-size: 12px;
+        }
+
+        .course-table{
+            min-width: 100%;
+        }
+
+
+    }
+
+    /*Small Screen*/
+
+    @media (max-width:360){
+        .main-container{
+            padding: 10px;
+        }
+
+        .course-table{
+            min-width: 100%;
+        }
+
+        .course-table th, course td{
+            padding: 6px 3px;
+            font-size: 11px;
+        }
+    }
