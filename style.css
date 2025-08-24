@@ -224,7 +224,7 @@ footer p{
 
         .form-row{
             flex-direction: column;
-            gap: 15px;
+            gap: 6px;
         }
 
         button{
@@ -263,7 +263,7 @@ footer p{
         }
 
         .gpacal-calculateinterface{
-            padding: 1rem;
+            padding: 0.4rem;
         }
 
         .gpacal-calculateinterface p{
@@ -286,6 +286,7 @@ footer p{
 
         .course-details{
             padding: 12px;
+            margin-top: 10px;
         }
 
         .course-details h2{
@@ -300,6 +301,8 @@ footer p{
         .course-table{
             min-width: 100%;
         }
+
+        
 
 
     }
