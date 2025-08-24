@@ -184,6 +184,19 @@ footer p{
     font-weight: 500;
 }
 
+.delete-btn{
+    background-color: #dc2626;
+    border: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.delete-btn:hover{
+    background: #b91c1c;
+}
+
 
 
     @media(max-width: 768px){
