@@ -12,6 +12,8 @@ body{
     min-height: 100vh;
     margin: 0px;
     padding: 10px;
+    padding-top: 40px;
+    flex-direction: column;
 }
 
 .main-container{
@@ -157,7 +159,7 @@ button:hover{
 .course-table{
     border-collapse: collapse;
     width: 100%;
-    min-width: 500px;
+    min-width: 100%;
 }
 .course-table th{
     background-color: #f4f4f4;
@@ -176,7 +178,11 @@ button:hover{
       background: #f9f9f9;
     }
 
-
+footer p{
+    text-align: center;
+    color: #383c47;
+    font-weight: 500;
+}
 
 
 
@@ -240,7 +246,7 @@ button:hover{
         }
 
         .gpa-image img{
-            width: 120px;
+            width: 160px;
         }
 
         .gpacal-calculateinterface{
@@ -262,7 +268,7 @@ button:hover{
 
         .form-1 input, .form-1 select{
             padding: 10px;
-            font-size: 13px;
+            font-size: 15px;
         }
 
         .course-details{
