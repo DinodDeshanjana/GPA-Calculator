@@ -10,10 +10,11 @@ addButton.onclick = function(event){
     var courseCode = document.getElementById('course-code').value;
     var credits = document.getElementById('course-credits').value;
     var grade = document.getElementById('course-grade').value;
+    var gradeLetter = document.getElementById('course-grade').options[document.getElementById('course-grade').selectedIndex].text;
 
     if (courseCode && credits && grade){
         courses.push({
-            code:courseCode, credits:Number(credits), grade:Number(grade)
+            code:courseCode, credits:Number(credits), grade:Number(grade),gradeLetter:gradeLetter
     });
 
     showCourses();
@@ -41,7 +42,7 @@ function showCourses(){
         var newRow = '<tr>';
         newRow += '<td>' + course.code + '</td>';
         newRow += '<td>' + course.credits + '</td>';
-        newRow += '<td>' + getGradeLetter(course.grade) + '</td>';
+        newRow += '<td>' + course.gradeLetter + '</td>';
         newRow += '<td><button class="delete-btn" onclick="removeCourse(' + i + ')">Remove</button></td>';
         newRow += '</tr>';
 
