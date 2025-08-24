@@ -4,7 +4,9 @@ var addButton = document.querySelector('button');
 var courseTable = document.querySelector('.course-details-list');
 var gpaDisplay = document.getElementById('calculated-gpa');
 
-addButton.onclick = function(){
+addButton.onclick = function(event){
+    event.preventDefault();
+
     var courseCode = document.getElementById('course-code').value;
     var credits = document.getElementById('course-credits').value;
     var grade = document.getElementById('course-grade').value;
@@ -20,6 +22,11 @@ addButton.onclick = function(){
     document.getElementById('course-code').value ="";
     document.getElementById('course-credits').value ="";
     document.getElementById('course-grade').value="";
+
+   
+}else{
+    alert("Please fill in all field!");
+    return;
 }
 };
 
