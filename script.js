@@ -93,3 +93,16 @@ function calculateGPA(){
     var gpa = totalPoints / totalCredits;
     gpaDisplay.innerHTML = gpa.toFixed(2);
 }
+
+
+ScrollReveal({
+    reset:true, distance:'60px', duration:2500, delay:100
+});
+
+ScrollReveal().reveal('.main-container h1', {delay:30, origin:'left'});
+ScrollReveal().reveal('.main-container p', {delay:30, origin:'right'});
+ScrollReveal().reveal('.main-container .gpa-display', {delay:30, origin:'right'});
+ScrollReveal().reveal('.main-container .form-row', {delay:30, origin:'right'});
+ScrollReveal().reveal('.main-container button', {delay:30, origin:'left'});
+ScrollReveal().reveal('.main-container .course-details', {delay:30, origin:'right'});
+ScrollReveal().reveal('.gpa-image', {delay:20, origin:'bottom'});
