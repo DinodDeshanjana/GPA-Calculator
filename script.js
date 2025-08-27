@@ -96,7 +96,7 @@ function calculateGPA(){
 
 
 ScrollReveal({
-    reset:true, distance:'60px', duration:2500, delay:100
+    reset:true, distance:'17px', duration:2500, delay:100
 });
 
 ScrollReveal().reveal('.main-container h1', {delay:30, origin:'left'});
